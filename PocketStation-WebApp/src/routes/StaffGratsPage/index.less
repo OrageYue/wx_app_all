@@ -1,0 +1,79 @@
+@import '../../index.less';
+@imgWidth: 50px;
+@brawnWidth: 30px;
+@brawnBottom: 42px;
+@brawnRight: 6px;
+@thanksHeight: 88px;
+@thanksPanelMB: 10px;
+@starInfoHeight: 100px;
+
+.thanksWrapper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 84px;
+  background-color: #f9f8f8;
+  .grats_top {
+    width: 100%;
+    height: 186px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #27ad77;
+  }
+  .grats_treeCard {
+    position: relative;
+    width: 92%;
+    height: 100%;
+   
+    .grants_records {
+      position: relative;
+      width: 100%;
+      height: 50%;
+      padding-top: 20px;
+      overflow: scroll;
+      margin-top: 326px;
+      padding-bottom: 64px;
+      background: #fff;
+      border-radius: 6px;
+    }
+  }
+}
+
+
+// :global {
+//   .am-modal-mask {
+//     background-color: rgba(37, 160, 100, .4)!important;
+//   }
+// }
+
+.modalContainer {
+  width: 72%!important;
+  font-size: 12px;
+  .modalTitle {
+    width: 100%;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .textarea {
+    width: 99%;
+    margin-top: 10px;
+    border: 1px solid #f1f1f1;
+  }
+  :global {
+    .am-modal-title {
+      font-size: 14px;
+    }
+    .am-list-extra {
+      font-size: 12px!important;
+      font-weight: 300;
+      overflow: visible!important;
+    }
+    .am-modal-button {
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+}

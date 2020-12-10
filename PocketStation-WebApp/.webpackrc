@@ -1,0 +1,12 @@
+{
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd-mobile", "libraryDirectory": "es", "style": true }]
+  ],
+  "theme": {
+    "primary-color": "#18C086",
+    "brand-primary": "rgb(24, 192, 134)"
+  },
+  "lessLoaderOptions": {
+    "javascriptEnabled": true
+  }
+}

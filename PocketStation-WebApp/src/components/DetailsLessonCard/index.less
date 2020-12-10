@@ -1,0 +1,53 @@
+.container {
+  height: 80px;
+  // border: solid 1px #bbbbbb;
+  min-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  &>img{
+    // @IMG_WIDTH: 70px;
+    // width: @IMG_WIDTH;
+    // max-width: @IMG_WIDTH;
+    // min-width: @IMG_WIDTH;
+    width: 26%;
+    margin: 11px;
+    background-color: #f1f1f1;
+    // flex: 1;
+  }
+
+  .right_panel {
+    // width: 100%;
+    // height: 100%;
+    padding: 11px;
+    padding-left: 0px;
+    flex: 1;
+
+    .right_top_panel {
+      width: 100%;
+      font-size: 13px;
+      .title {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        width: 120px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .lecturer {
+        margin-right: 10px;
+      }
+    }
+
+    .right_bottom_panel {
+      width: 100%;
+      font-size: 12px;
+      color: #bbbbbb;
+      .btns_container {
+        // flex: 1;
+        padding-right: 4px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,40 @@
+@bgcolor: #ccc;
+@whiteSpace: 8px;
+// @primaryColor: #4db185;
+@primaryColor: #27ad77;
+@specialColor: #8e8e8e;
+@wingBlank: 8px;
+@tabBar: 50px;
+html, body, :global(#root) {
+  height: 100%;
+  margin: 0;
+  font-size: 12px;
+  // font-family: Georgia, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+input {
+  outline: none;
+  border: 0;
+}
+input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar{
+  width:0;
+  height:0;
+}
+
+.textWeight(@value) {
+  font-weight: @value;
+}
+
+:global {
+  .am-tab-bar-bar {
+    height: 64px!important;
+    position: fixed!important;
+  }
+}

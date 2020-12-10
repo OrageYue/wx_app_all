@@ -1,0 +1,68 @@
+.card {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 60px;
+  left: 50%;
+  background: url(/public/cardBg.png) no-repeat;
+  background-size: 100% 100%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  .cardT {
+    flex: 1;
+    .treeWrap {
+      width: 50%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-top: 10%;
+      img {
+        width: 100%;
+      }
+    }
+    .cardR {
+      flex: 1;
+      height: 100%;
+      .grats_title {
+        font-size: 15px;
+        line-height: 40px;
+        padding-top: 20px;
+      }
+      .grats_name {
+        width: 110px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+        background: url(/public/grats_name.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .tree {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0 10px;
+        padding-right: 10px;
+        .treeCard {
+          flex: 0.16;
+          height: 80px;
+          color: #fff;
+          background: url(/public/treeCard.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  
+  .Wgrans {
+    height: 30px;
+    margin-top: 10px;
+    transform: translateX(12%);
+    padding: 0 10px 10px 0;
+    img {
+      height: 20px;
+      margin-right: 20px;
+    }
+  }
+}

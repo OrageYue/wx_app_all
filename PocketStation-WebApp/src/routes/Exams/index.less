@@ -1,0 +1,40 @@
+@import '../../index.less';
+@btnHeight: 33px;
+.wrap {
+  width: 100%;
+  overflow: auto;
+  .item {
+    width: 100%;
+    overflow: auto;
+    div.bSpace:nth-last-child(2) {
+    	margin-bottom: 0px;
+    }
+    .bSpace {
+      margin-bottom: @whiteSpace;
+      background-color: #fff;
+      width: 100%;
+        label {
+          color: @specialColor;
+        }
+        .Cred label {
+        	color: #f00;
+        }
+        .Cgreen label {
+        	color: @primaryColor;
+        }
+      }
+    h4 {
+      color: #000;
+      padding-left: 15px;
+    }
+  }
+  .btnWrap {
+    width: 100%;
+    height: @btnHeight;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    padding-bottom: @whiteSpace;
+  }
+}

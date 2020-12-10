@@ -1,0 +1,82 @@
+@import '../../index.less';
+.normal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // background: url(../../assets/new_bg_375*812.png) no-repeat;
+  background-size: 100% 100%;
+  // padding-top: 15%;
+  .loginBox {
+    height: 100%;
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.titlelogo {
+  width: 70%;
+  text-align: center
+}
+.bottomcontent {
+  padding-top: 30%;
+  width: 200px
+}
+.loginOpt {
+  color: #fff;
+}
+
+.txt {
+  color: #eee;
+}
+ 
+.inp {
+  border: 0;
+  color: #fff;
+  // 去掉输入框的背景色 
+  background-color: transparent;
+  // color: #fff;
+  // opacity: 0;
+  border-bottom: 1px solid #fff; 
+  width: 100%;
+} 
+.releasetext{
+ bottom: 0;
+ margin-top: 100px;
+ flex: 0 0 auto
+}
+input::-webkit-input-placeholder { 
+  color: #eee; 
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.choiceType {
+  width: 100%;
+
+
+  :global {
+    .am-segment {
+      width: 100%!important;
+
+    }
+    .am-segment-item {
+      border: 0px solid #ffffff;
+     
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 1px;
+    }
+    .am-segment-item-selected {
+      border-right: 1px solid #eee;
+      color: #fff;
+      background: transparent;
+      // border-color: #fff;
+      font-size: 22px
+    }
+  }
+}

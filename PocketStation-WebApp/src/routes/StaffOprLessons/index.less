@@ -1,0 +1,46 @@
+
+@import '../../index.less';
+
+.lsn_title {
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #f1f1f1;
+  .choice {
+    :global {
+      .am-segment-item {
+        border: 0 none;
+        color: #000;
+        font-size: 14px;
+        margin-bottom: 1px;
+        border-radius: 0;
+      }
+      .am-segment-item-selected {
+        background: transparent;
+        color: @primaryColor!important;
+        border-radius: 0;
+      }
+    }
+  }
+}
+.lsn_container {
+  width: 100%;
+  margin-bottom: 20px;
+  .lsn_img {
+    width: 70px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 6px;
+  }
+  .lsn_R {
+    .lsn_B {
+      color: #9c9b9b;
+      .type {
+        margin-right: 20px;
+      }
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+  
+}

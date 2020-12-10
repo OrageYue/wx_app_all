@@ -1,0 +1,35 @@
+@import '../../index.less';
+
+@avatarWidth: 44px;
+.wrap {
+  width: 100%;
+  .card {
+    padding: 10px;
+    .avatar {
+      height: @avatarWidth;
+      margin-right: 10px;
+    }
+    .cardR {
+      flex: 1;
+      height: 44px;
+      color: #868181;
+      font-weight: 300;
+      .right_bottom {
+        width: 100%;
+        color: #bbb;
+        .right {
+          flex: 1;
+          .reply {
+            i {
+              display: block;
+              margin-top: 4px;
+              margin-right: 3px;
+              font-size: 12px;
+              line-height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -31,6 +31,7 @@ export function redirectWXAuthURL(url) {
   const scope = 'snsapi_userinfo';
   const authurl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${WxAppID}&redirect_uri=${redirect}&response_type=code&scope=${scope}&state=${state}#wechat_redirect`;
   window.location.href = authurl;
+  
 }
 
 

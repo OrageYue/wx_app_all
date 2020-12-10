@@ -1,4 +1,4 @@
-export const WxAppID = 'wxc7cf4e85ecbf8282';
+export const WxAppID = '自己的appid';
 
 //export const host = "https://pocketstation.cn";
 // export const host = "http://47.102.223.5:8080";

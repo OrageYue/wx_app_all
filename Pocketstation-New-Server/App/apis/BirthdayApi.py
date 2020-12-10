@@ -30,8 +30,8 @@ class Birthday(Resource):
                 point.give = point.give + points
                 db.session.commit()
 
-                appid = 'wxc7cf4e85ecbf8282'
-                secret = 'bafb0339afa3db639000a92ae15ff072'
+                appid = '自己的appid'
+                secret = '自己的secret'
                 url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}'.format(
                     appid,
                     secret)
@@ -103,8 +103,8 @@ class Birthday(Resource):
                 db.session.add(point)
                 db.session.commit()
 
-                appid = 'wxc7cf4e85ecbf8282'
-                secret = 'bafb0339afa3db639000a92ae15ff072'
+                appid = '自己的appid'
+                secret = '自己的secret'
                 url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}'.format(
                     appid,
                     secret)

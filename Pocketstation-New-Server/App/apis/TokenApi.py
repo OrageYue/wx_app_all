@@ -115,7 +115,7 @@ class TokenResource1(Resource):
         user = User.query.filter(User.email.__eq__(email)).first()
         admin = Admin.query.filter(Admin.email.__eq__(email)).first()
         if user:
-            url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxc7cf4e85ecbf8282&secret=bafb0339afa3db639000a92ae15ff072&code={}&grant_type=authorization_code'.format(code)
+            url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=自己的appid&secret=自己的secret&code={}&grant_type=authorization_code'.format(code)
             response = requests.get(url)
             logger.info('post[%s]=>[%d][%s]' % (
                 code, response.status_code, response.text
@@ -152,7 +152,7 @@ class TokenResource1(Resource):
                 }
                 return make_response((jsonify(data), 200, headers))
         elif admin:
-            url2 = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxc7cf4e85ecbf8282&secret=bafb0339afa3db639000a92ae15ff072&code={}&grant_type=authorization_code'.format(code)
+            url2 = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=自己的appid&secret=自己的secret&code={}&grant_type=authorization_code'.format(code)
             response = requests.get(url2)
             logger.info('post[%s]=>[%d][%s]' % (
                 code, response.status_code, response.text
@@ -229,7 +229,7 @@ class TokenResource2(Resource):
 
 class TokenResource3(Resource):
     def get(self,code,pwd):
-        url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxc7cf4e85ecbf8282&secret=bafb0339afa3db639000a92ae15ff072&code={}&grant_type=authorization_code'.format(
+        url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=自己的appid&secret=自己的secret&code={}&grant_type=authorization_code'.format(
             code)
         response = requests.get(url)
         logger.info('post[%s]=>[%d][%s]' % (
